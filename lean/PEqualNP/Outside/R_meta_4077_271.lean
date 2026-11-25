@@ -4,8 +4,8 @@ import Mathlib.Data.Fintype.Order
 
 open PEqualNP.CircuitLowerBounds PEqualNP.MetaComplexity
 
--- The threshold uses fan-in saturation: a wire depending on all ten inputs at position 18
--- would admit a ten-leaf formula, which the three rejected independent sets rule out.
+-- At position 18, a wire depending on all ten inputs would unfold into a
+-- ten-leaf formula. Three rejected independent sets rule out that leaf count.
 
 set_option maxRecDepth 30000 in
 set_option maxHeartbeats 0 in
